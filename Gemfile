@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
-
+ruby '2.1.1'
+#ruby-gemset=railstutorial_rails_4_1
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
@@ -22,11 +23,23 @@ gem 'jquery-rails', '3.0.4'
 gem 'turbolinks', '1.1.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.0'
+
+group :doc do
+      gem 'sdoc', '0.3.20', require: false
+end
+
+group :production do
+      gem 'pg', '0.15.1'
+      gem 'rails_12factor', '0.0.2'
+end
+
+
+#comout
 # bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+#gem 'sdoc', '~> 0.4.0',          group: :doc
 
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+#gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

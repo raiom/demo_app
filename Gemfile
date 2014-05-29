@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.1.1'
+#ruby '2.1.1'
 #ruby-gemset=railstutorial_rails_4_1
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -33,6 +33,8 @@ group :production do
       gem 'rails_12factor', '0.0.2'
 end
 
+gem 'therubyracer'
+gem 'rb-readline'
 
 #comout
 # bundle exec rake doc:rails generates the API under doc/api.
